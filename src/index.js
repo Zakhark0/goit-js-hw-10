@@ -40,7 +40,7 @@ function getAllIds(arr) {
   });
 }
 function showError() {
-  Notiflix.Report.failure('Котика не знайдено');
+  Notiflix.Report.failure('Цього кота не знайдено');
 }
 createOptions();
 function onSelectResult() {
