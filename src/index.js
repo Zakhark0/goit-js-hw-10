@@ -14,7 +14,7 @@ loaderEl.style.display = 'block';
 selectedEl.addEventListener('change', onSelectResult);
 
 function createOptions(e) {
-  loaderEl.style.display = 'none';
+  loaderEl.style.display = 'block';
   console.log(catInfo);
   fetchBreeds()
     .then(getAllIds)
@@ -33,6 +33,7 @@ function getAllIds(arr) {
     optionsElement.value = value;
     optionsElement.text = text;
     selectedEl.appendChild(optionsElement);
+    loaderEl.style.display='block'
   }
   new SlimSelect({
     select: '.breed-select',
