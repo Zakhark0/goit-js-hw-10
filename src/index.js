@@ -33,7 +33,7 @@ function getAllIds(arr) {
     optionsElement.value = value;
     optionsElement.text = text;
     selectedEl.appendChild(optionsElement);
-    loaderEl.style.display='block'
+    loaderEl.style.display='none'
   }
   new SlimSelect({
     select: '.breed-select',
